@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="../img/icons_recicle.ico" type="image/x-icon">
+    <title>Inscrição Sustentável</title>
+</head>
+<body>
+    <form class="formulario" method="post" enctype="multipart/form-data">
+
+    <h1 class="title"><i class="icon icon-mail-1"></i>Projeto Sustentável</h1>
+
+    <p>
+        Preencha o Formulário para receber mais informações sobre um estilo de vida Sustentável.
+    </p>
+    
+    <label class="label">
+        <span>Nome</span>
+        <input type="text" name="nome" class="campo" placeholder="Digite seu nome" required=""/>
+    </label>
+    
+    <label class="label">
+        <span>E-mail</span>
+        <input type="email" name="email" class="campo" placeholder="Digite seu e-mail" required=""/>
+    </label>
+<!--        
+        <label class="label">
+            <span>Assunto</span>
+            <input type="text" name="assunto" class="campo" placeholder="Digite um assunto" required=""/>   
+        </label>
+   
+        <label class="label">
+            <span>Anexar Arquivo</span>
+            <input type="file" name="arquivo" id="arquivo" class="campo" required>   
+        </label>
+-->
+        <label class="naoexibir">
+            <span>Não preencher:</span><br>
+            <input type="text" name="url" value=""></p>
+        </label> 
+        
+        <label class="label">
+            <span>Mensagem</span>
+            <textarea name="mensagem" class="campo" placeholder="Deixe sua mensagem"></textarea>
+        </label>
+        
+        <label class="label">             
+            <input type="hidden" name="acao" value="enviar"> 
+            <button type="submit" class="botao">Enviar</button>        
+        </label>
+
+    </form>
+</body>
+</html>
