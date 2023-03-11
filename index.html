@@ -6,45 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="../img/icons_recicle.ico" type="image/x-icon">
-    <title>Inscrição Sustentável</title>
+    <title>Inscrição JiuJitsu</title>
 </head>
 <body>
     <form class="formulario" method="post" enctype="multipart/form-data">
 
-    <h1 class="title"><i class="icon icon-mail-1"></i>Projeto Sustentável</h1>
+    <h1 class="title"><i class="icon icon-mail-1"></i>Jiu Jitsu</h1>
+    
 
-    <p>
-        Preencha o Formulário para receber mais informações sobre um estilo de vida Sustentável.
-    </p>
+    <p>Cadastrar Novo Aluno</p>
     
     <label class="label">
         <span>Nome</span>
         <input type="text" name="nome" class="campo" placeholder="Digite seu nome" required=""/>
     </label>
+
+    <label class="label">
+        <span>Responsável</span>
+        <input type="text" name="responsavel" class="campo" placeholder="Nome do Responsável" required=""/>
+    </label>
+
+    <label class="label">
+        <span>Nascimento</span>
+        <input type="date" name="nascimento" class="campo" required=""/>
+    </label>
     
     <label class="label">
-        <span>E-mail</span>
-        <input type="email" name="email" class="campo" placeholder="Digite seu e-mail" required=""/>
+        <span>Contato</span>
+        <input type="tel" name="contato" class="campo" placeholder="(21) 9 9999-9999" required=""/>
     </label>
-<!--        
-        <label class="label">
-            <span>Assunto</span>
-            <input type="text" name="assunto" class="campo" placeholder="Digite um assunto" required=""/>   
-        </label>
-   
-        <label class="label">
-            <span>Anexar Arquivo</span>
-            <input type="file" name="arquivo" id="arquivo" class="campo" required>   
-        </label>
--->
+
+    <label class="label">
+        <span>Sexo</span>
+            <input type="radio" name="sexo" id="masculino">
+            <label for="masculino">Masculino</label>
+            <input type="radio" name="sexo" id="feminino">
+            <label for="feminino">Feminino</label>
+    </label>
         <label class="naoexibir">
             <span>Não preencher:</span><br>
             <input type="text" name="url" value=""></p>
         </label> 
         
         <label class="label">
-            <span>Mensagem</span>
-            <textarea name="mensagem" class="campo" placeholder="Deixe sua mensagem"></textarea>
+            <span>Observações</span>
+            <textarea name="observacao" class="campo" placeholder="informe sobre condições especiais, saúde, etc" style="resize: none;"></textarea>
         </label>
         
         <label class="label">             
